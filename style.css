@@ -1,0 +1,266 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f5ee;
+}
+
+/* ===== ШАПКА ===== */
+.navbar-custom {
+    background: #1e4d2b;
+    padding: 14px 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+.navbar-custom .navbar-brand {
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+}
+.navbar-custom .navbar-brand span {
+    color: #f0c040;
+}
+.navbar-custom .nav-link {
+    color: #d4e8d4 !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-custom .nav-link:hover {
+    color: #f0c040 !important;
+    transform: translateY(-2px);
+}
+
+/* ===== БАННЕР ===== */
+.banner {
+    background: linear-gradient(145deg, #1e4d2b, #3a7a4d);
+    padding: 60px 0 50px;
+    border-radius: 0 0 35px 35px;
+    color: white;
+    text-align: center;
+}
+.banner h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+.banner h1 span {
+    color: #f0c040;
+}
+.banner .lead {
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* ===== КАРТОЧКИ ПРИЧИН ===== */
+.reason-card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px 20px;
+    height: 100%;
+    border: 1px solid #e0ece0;
+    transition: 0.4s;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.reason-card .icon-circle {
+    width: 68px;
+    height: 68px;
+    background: #e8f3e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    font-size: 30px;
+    color: #1e4d2b;
+}
+
+/* ===== КАРТОЧКИ ПТИЦ ===== */
+.bird-card {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #deecde;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.4s;
+    height: 100%;
+}
+.bird-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.bird-card img {
+    width: 100%;
+    height: auto;          
+    aspect-ratio: 4 / 3;    
+    object-fit: cover;     
+    object-position: center; 
+}
+
+
+@media (min-width: 992px) {
+    .bird-card img {
+        height: 220px;      
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bird-card img {
+        height: 190px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .bird-card img {
+        height: auto;          
+        aspect-ratio: 4 / 3;  
+        object-fit: cover;
+        max-height: 220px;     
+    }
+}
+.bird-card .card-body {
+    padding: 16px 18px 20px;
+}
+.bird-card .bird-name {
+    font-weight: 700;
+    font-size: 19px;
+    color: #1e4d2b;
+}
+.bird-card .bird-species {
+    color: #6a8a6d;
+    font-size: 13px;
+}
+
+/* ===== КНОПКИ ===== */
+.btn-yellow {
+    background: #f0c040;
+    color: #1e4d2b;
+    font-weight: 700;
+    padding: 12px 38px;
+    border-radius: 40px;
+    border: none;
+    transition: 0.4s;
+}
+.btn-yellow:hover {
+    background: #dcb036;
+    color: #1e4d2b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(240, 192, 64, 0.4);
+}
+.btn-outline-yellow {
+    border: 2px solid #f0c040;
+    color: #1e4d2b;
+    font-weight: 600;
+    border-radius: 40px;
+    padding: 9px 28px;
+    background: transparent;
+    transition: 0.4s;
+}
+.btn-outline-yellow:hover {
+    background: #f0c040;
+    color: #1e4d2b;
+    transform: scale(1.05);
+}
+
+/* ===== ПОДВАЛ ===== */
+.footer-custom {
+    background: #173021;
+    color: #e8f5e8;
+    padding: 25px 0 18px;
+    border-radius: 35px 35px 0 0;
+    margin-top: 45px;
+}
+.footer-custom p {
+    color: #e8f5e8;
+}
+.footer-custom a {
+    color: #f0c040;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-custom a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+.bg-soft-green {
+    background: #e6f1e6;
+}
+.section-title {
+    font-weight: 700;
+    color: #1e4d2b;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f0c040;
+    border-radius: 4px;
+    margin: 6px auto 0;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+    .banner h1 { font-size: 36px; }
+    .banner .lead { font-size: 16px; }
+    .banner { padding: 40px 0 35px; }
+    .bird-card img { height: 160px; }
+    .reason-card { padding: 20px 15px; }
+    .btn-yellow { padding: 10px 30px; font-size: 16px; }
+    .footer-custom .row { text-align: center !important; }
+}
+@media (max-width: 576px) {
+    .banner h1 { font-size: 28px; }
+    .banner { padding: 30px 0 25px; }
+    .banner .lead { font-size: 14px; }
+    .bird-card img { height: 180px; }
+    .reason-card { padding: 16px 12px; }
+    .btn-yellow { padding: 8px 20px; font-size: 14px; }
+    .btn-outline-yellow { padding: 6px 18px; font-size: 14px; }
+    .footer-custom .col-md-4 { margin-bottom: 8px; }
+}
+
+
+.bird-card img {
+    width: 100%;
+    height: auto;          
+    aspect-ratio: 4 / 3;   
+    object-fit: cover;     
+    object-position: center;
+}
+
+
+@media (min-width: 992px) {
+    .bird-card img {
+        height: 220px;       
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bird-card img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .bird-card img {
+        height: auto;        
+        object-fit: cover;
+        max-height: 220px;     
+    }
+}

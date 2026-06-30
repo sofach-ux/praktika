@@ -1,0 +1,94 @@
+/* ===== СТИЛИ ТОЛЬКО ДЛЯ birds.html ===== */
+
+.page-header {
+    background: white;
+    padding: 35px 0 25px;
+    border-bottom: 3px solid #e8f0e8;
+    margin-bottom: 30px;
+}
+.page-header h1 {
+    font-weight: 700;
+    color: #1e4d2b;
+}
+
+/* Блок реквизитов  */
+.donate-block {
+    background: white;
+    border-radius: 18px;
+    padding: 28px 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    border-left: 5px solid #f0c040;
+    margin: 30px 0;
+}
+.donate-block .card-number {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e4d2b;
+    background: #f4f9f4;
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+/* Форма обратной связи */
+.feedback-block {
+    background: white;
+    border-radius: 18px;
+    padding: 28px 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    margin: 30px 0;
+}
+.feedback-block .form-label {
+    font-weight: 600;
+    color: #1e4d2b;
+}
+.feedback-block .form-control:hover,
+.feedback-block .form-select:hover {
+    border-color: #f0c040;
+    box-shadow: 0 0 0 3px rgba(240, 192, 64, 0.15);
+}
+.feedback-block .form-control:focus,
+.feedback-block .form-select:focus {
+    border-color: #f0c040;
+    box-shadow: 0 0 0 3px rgba(240, 192, 64, 0.25);
+}
+
+/* Кнопка наверх */
+.back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #1e4d2b;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+}
+.back-top:hover {
+    background: #f0c040;
+    color: #1e4d2b;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .donate-block { padding: 20px; }
+    .donate-block .card-number { font-size: 16px; }
+    .feedback-block { padding: 20px; }
+    .back-top { width: 40px; height: 40px; bottom: 20px; right: 20px; }
+}
+@media (max-width: 576px) {
+    .donate-block { padding: 16px; }
+    .donate-block .card-number { font-size: 14px; padding: 6px 12px; }
+    .feedback-block { padding: 16px; }
+    
+    .back-top { width: 36px; height: 36px; bottom: 16px; right: 16px; font-size: 14px; }
+}
